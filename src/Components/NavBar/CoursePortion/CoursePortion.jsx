@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../CoursePortion/CoursePortion.css";
-import MiniCourse from "./miniCourse/miniCourse";
+import MiniCourse from "./miniCourse/miniCourse.jsx";
 import Axios from "axios";
 import { useAuth } from "../../../Contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
