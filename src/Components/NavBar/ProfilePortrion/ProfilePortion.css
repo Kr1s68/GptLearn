@@ -1,0 +1,113 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  padding-inline: 8%;
+}
+
+.user img {
+  border-radius: 5px;
+  margin-right: 7%;
+}
+
+.user .userName {
+  margin-right: 27%;
+}
+
+.user button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.log-out {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.34rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 8%;
+  margin-top: 4%;
+  width: 84%;
+  padding-block: 4%;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.log-out img {
+  margin-right: 5%;
+}
+
+.log-out:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+}
+
+.notDisplayed {
+  visibility: hidden;
+  animation: fadeInBottomReverse 0.4s;
+}
+
+.visible {
+  visibility: visible;
+  animation: fadeInBottom 0.4s;
+}
+
+.settingsPopup {
+  position: absolute;
+  bottom: 16%;
+  margin-left: 15px;
+  background-color: rgb(57, 53, 73);
+  width: 270px;
+  padding-block: 15px;
+  padding-inline: 10px;
+  border-radius: 10px;
+}
+
+.settingsPopup div {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.settingsPopup div:hover {
+  color: #61afef;
+  text-shadow: 0 0 20px #61afef;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottomReverse {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}

@@ -1,0 +1,34 @@
+.Chatbox {
+  background: none;
+  margin-inline: 3%;
+  height: 10%;
+  border-radius: 20px;
+}
+
+.Chatbox textarea {
+  height: 100%;
+  width: 98%;
+  background-color: rgba(0, 0, 0, 0.404);
+  color: white;
+  font: "Open Sans", sans-serif;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  resize: none;
+  padding-inline: 1%;
+  padding-top: 0.4%;
+}
+
+.Chatbox textarea::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.Chatbox textarea::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.Chatbox textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+  border-radius: 12px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+}

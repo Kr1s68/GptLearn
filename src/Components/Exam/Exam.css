@@ -1,0 +1,276 @@
+.courseWrapper {
+  height: 100%;
+  width: 64%;
+  margin-left: 22%;
+  color: white;
+}
+
+.courseWrapper span {
+  color: aqua;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.courseWrapper span {
+  color: aqua;
+  font-size: 1.4rem;
+}
+
+.courseWrapper h1 {
+  text-align: center;
+}
+
+.courseWrapper pre {
+  background-color: rgba(0, 0, 0, 0.534);
+  font-size: 1rem;
+  padding-block: 3%;
+  padding-inline: 2%;
+  width: fit-content;
+  border-radius: 25px;
+}
+
+.r {
+  color: #e06c75;
+}
+
+.g {
+  color: #98c379;
+}
+
+.y {
+  color: #e5c07b;
+}
+
+.db {
+  color: #61afef;
+}
+
+.lb {
+  color: #56b6c2;
+}
+
+.p {
+  color: #c678dd;
+}
+
+.noStyle {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  right: 2%;
+  height: 40px;
+  top: 48%;
+  font-size: 2.2rem;
+  background-color: #61afef3b;
+  padding-inline: 1.2%;
+  padding-block: 1%;
+  border-radius: 25px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.navigation:hover {
+  top: 39%;
+  height: 40%;
+}
+
+.navigation:hover div {
+  opacity: 1;
+}
+
+.navigation div {
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+}
+
+.navigation div:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #56b6c2,
+      0 0 40px #56b6c2, 0 0 50px #56b6c2, 0 0 60px #56b6c2, 0 0 70px #56b6c2;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #61afef, 0 0 40px #61afef,
+      0 0 50px #61afef, 0 0 60px #61afef, 0 0 70px #61afef, 0 0 80px #61afef;
+  }
+}
+
+.courseWrapper p {
+  color: white !important;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.courseWrapper button {
+  font-size: 1.2rem;
+  background-color: #61afef;
+  border: solid 2px #61afef;
+  color: white;
+  padding-block: 1%;
+  padding-inline: 1.6%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.courseWrapper button:hover {
+  background-color: #61afef21;
+  color: #61afef;
+}
+
+.courseWrapper strong {
+  font-size: 1.2rem;
+}
+
+.dot-falling {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9999px 0 0 0 #9880ff;
+  animation: dot-falling 1s infinite linear;
+  animation-delay: 0.1s;
+}
+.dot-falling::before,
+.dot-falling::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-falling::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-falling-before 1s infinite linear;
+  animation-delay: 0s;
+}
+.dot-falling::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-falling-after 1s infinite linear;
+  animation-delay: 0.2s;
+}
+
+.display-none {
+  margin-top: 2%;
+  margin-left: 2%;
+  display: none;
+}
+
+@keyframes dot-falling {
+  0% {
+    box-shadow: 9999px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 9999px 0 0 0 #9880ff;
+  }
+  100% {
+    box-shadow: 9999px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+@keyframes dot-falling-before {
+  0% {
+    box-shadow: 9984px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 9984px 0 0 0 #9880ff;
+  }
+  100% {
+    box-shadow: 9984px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+@keyframes dot-falling-after {
+  0% {
+    box-shadow: 10014px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 10014px 0 0 0 #9880ff;
+  }
+  100% {
+    box-shadow: 10014px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+
+.unitPoint {
+  background-color: rgba(0, 0, 0, 0.349);
+  margin-block: 1.2%;
+  padding-block: 1.2%;
+  padding-inline: 3%;
+  border-radius: 20px;
+}
+
+ul {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+ol {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+.unitPoint span {
+  display: block;
+  height: 2px !important;
+  width: 2px !important;
+  overflow: visible;
+  transition: all 0.3s;
+  margin-bottom: 6%;
+}
+
+.unitPoint span:hover {
+  box-shadow: 28px 28px 90px 44px #56b6c2;
+}
+
+.solDiv {
+  height: fit-content;
+}
+
+.solDiv button {
+  width: 20%;
+  margin-bottom: 2vh;
+}
+
+.solDiv .inputArea {
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.493);
+  padding-inline: 2%;
+  color: white;
+  font-size: 1.2rem;
+  padding-block: 1%;
+  border-radius: 20px;
+  resize: none;
+  margin-bottom: 4%;
+}

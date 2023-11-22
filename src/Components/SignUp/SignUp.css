@@ -1,0 +1,104 @@
+.formWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.formWrapper form {
+  margin-left: 10vw;
+  height: fit-content;
+  padding-inline: 2%;
+  padding-block: 10%;
+  max-width: 30vw;
+  min-width: 20vw;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.301);
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  z-index: 2;
+  color: white;
+}
+
+.inputLabel {
+  font-size: 1.6rem;
+  color: rgb(152, 195, 121);
+}
+
+.formWrapper form input {
+  height: 5vh;
+  width: 18vw;
+  margin-bottom: 15%;
+  background: none;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  padding-inline: 3%;
+  border: solid 2px #e06c7641;
+  margin-top: 11px;
+}
+
+.glowing-border {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  transition: all 0.3s;
+}
+
+.glowing-border:focus {
+  outline: none;
+  border-color: #e06c75;
+  box-shadow: 0 0 10px #e06c75;
+}
+
+.sideLabelAnimation {
+  font-size: 3.2rem;
+  margin-left: 15vw;
+  width: 60vw;
+  font-weight: 400;
+  color: white;
+}
+
+.formWrapper form button {
+  height: 7vh;
+  width: 15vw;
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(152, 195, 121);
+  border: solid 2px rgb(152, 195, 121);
+  border-radius: 20px;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+
+.formWrapper form button:hover {
+  background-color: rgba(152, 195, 121, 0.233);
+  color: rgb(152, 195, 121);
+}
+
+.formWrapper form .loginOptions {
+  margin-bottom: -34%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.formWrapper form .loginOptions .icon {
+  color: #c678dd;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.formWrapper form .loginOptions .icon:hover {
+  text-shadow: 0 0 19px #c678dd;
+}
+
+.inputDiv {
+  margin-block: -4%;
+}

@@ -1,0 +1,65 @@
+.chat {
+  background-color: rgba(255, 255, 255, 0.103);
+  margin-block: 4%;
+  padding-block: 3.8%;
+  padding-inline: 3%;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  max-height: 6%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.chat .titleWrapper {
+  margin-right: 10%;
+  width: 65%;
+  overflow: hidden;
+}
+
+.chat .title {
+  white-space: nowrap;
+  padding-left: 8%;
+}
+
+.chat .titleNoAnimation {
+  white-space: nowrap;
+  padding-left: 8%;
+}
+
+.chat .titleEditor {
+  margin-block: 8%;
+  padding-left: 8%;
+  font-size: 15px;
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.chat button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 3%;
+}
+
+.chat:hover .title {
+  animation: scrollOnHover 3s linear infinite;
+}
+
+.chat:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+}
+
+@keyframes scrollOnHover {
+  0% {
+    transform: translateX(110%);
+  }
+
+  100% {
+    transform: translateX(-180%);
+  }
+}

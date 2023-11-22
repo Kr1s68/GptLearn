@@ -1,0 +1,13 @@
+Marketing: 
+Natural Marketing
+Afiliate Marketing
+Product:
+Programming course
+Find a job course
+TODOS:
+-Do the Stripe payment processing : NOT DONE
+-Do the Profile Editing popup : DONE
+-Do the Afiliate Marketing system : NOT DONE
+-Make the account creation in database on Sign Up : DONE
+-Finish the courses : DONE
+-Build the self-examination functionality : DONE

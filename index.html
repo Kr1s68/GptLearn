@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studify AI</title>
+  </head>
+  <body>
+    <style>
+      html {
+        background-image: linear-gradient(
+          160deg,
+          rgb(41, 37, 56),
+          rgb(8, 0, 29) 45%,
+          rgb(41, 37, 56)
+        );
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+      }
+    </style>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script
+      src="https://kit.fontawesome.com/a85210cb71.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function replaceNewlinesWithBr(inputString) {
+        return inputString.replace(/\n/g, "<br>");
+      }
+
+      function fetchAndSetExplanationById(inputId, outputId) {
+        const loaderId = outputId + "Loader";
+        const loader = document.getElementById(loaderId);
+        loader.style.display = "block";
+        const inputElement = document.getElementById(inputId);
+        if (!inputElement) {
+          console.error(`Element with ID "${inputId}" not found.`);
+          return;
+        }
+        const content = inputElement.textContent || inputElement.innerText;
+        fetch(
+          `http://localhost:3001/getExplanation?message=${encodeURIComponent(
+            content
+          )}`
+        )
+          .then((response) => {
+            if (response.ok) {
+              return response.text();
+            } else {
+              throw new Error("Failed to fetch explanation");
+            }
+          })
+          .then((data) => {
+            const outputElement = document.getElementById(outputId);
+            if (outputElement) {
+              outputElement.innerHTML = replaceNewlinesWithBr(data);
+              loader.style.display = "none";
+            } else {
+              console.error(`Element with ID "${outputId}" not found.`);
+            }
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

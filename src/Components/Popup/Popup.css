@@ -1,0 +1,142 @@
+.background {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.082);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background-color: rgb(5, 0, 17);
+  height: 78%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.popup h2 {
+  margin-bottom: 6%;
+}
+
+.popup label {
+  font-size: 1.1rem;
+  margin-bottom: 2%;
+}
+
+.popup textarea {
+  height: 33%;
+  width: 82%;
+  margin-bottom: 2%;
+  background-color: rgb(14, 9, 31);
+  outline: #61afef 2px;
+  border-radius: 10px;
+  resize: none;
+  color: white;
+  padding-inline: 4%;
+  padding-block: 3%;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.popup textarea:focus {
+  outline: none;
+  border-color: #98c379;
+  box-shadow: 0 0 3px #98c379;
+}
+
+.popup div {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+}
+
+.popup button {
+  font-size: 1.1rem;
+  background: none;
+  outline: none;
+  color: white;
+  border: 1px white solid;
+  padding-inline: 25px;
+  padding-block: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.popup button:hover {
+  color: #61afef;
+  border-color: #61afef;
+  box-shadow: 0 0 10px #61afef;
+  text-shadow: 0 0 20px #61afef;
+}
+
+.freePlan,
+.premiumPlan {
+  border-style: solid;
+  border-width: 2px;
+  border-style: solid;
+  padding-inline: 3%;
+  border-radius: 20px;
+  margin-inline: 3%;
+}
+
+.freePlan .priceLabel {
+  font-weight: bold;
+  font-size: 1.45rem;
+  color: #98c379;
+  margin-block: 4%;
+}
+
+.premiumPlan .priceLabel {
+  font-weight: bold;
+  font-size: 1.45rem;
+  color: #61afef;
+  margin-block: 4%;
+}
+
+.freePlan button,
+.premiumPlan button {
+  margin-top: 12% !important;
+}
+
+.freePlan ul {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.freePlan ul li::before {
+  content: "\2022";
+  color: #98c379;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.premiumPlan ul {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.premiumPlan ul li::before {
+  content: "\2022";
+  color: #61afef;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.freePlan ul,
+.premiumPlan ul {
+  list-style: none;
+}

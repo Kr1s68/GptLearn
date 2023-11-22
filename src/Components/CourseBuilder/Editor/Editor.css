@@ -1,0 +1,17 @@
+.editorWrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.editorWrapper textarea {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.315);
+  width: 99vw;
+  height: 90%;
+}
+
+.editorWrapper button {
+  height: 5vh;
+  width: 20vw;
+  cursor: pointer;
+}

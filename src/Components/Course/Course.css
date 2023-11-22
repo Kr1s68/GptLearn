@@ -1,0 +1,99 @@
+.course {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.082);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 82%;
+  height: 28vh;
+  margin-block: 3%;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 2%;
+}
+
+.course img {
+  height: 100%;
+  width: 38%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.course .description {
+  width: 110%;
+  height: 100%;
+}
+
+.course h1 {
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.course:hover {
+  width: 96%;
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.course:hover .description {
+  width: 90%;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.course button {
+  opacity: 0;
+  margin-block: 2vh;
+  margin-right: 2vw;
+  width: 8.4vw;
+  height: 4.6vh;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(12, 0, 43, 0.308);
+  border: solid 2px white;
+  outline: none;
+}
+
+.disabled:hover {
+  color: #4b4b4b !important;
+  border-color: #4b4b4b !important;
+  box-shadow: 0 0 10px #4b4b4b !important;
+  text-shadow: 0 0 20px #4b4b4b !important;
+}
+
+button:hover {
+  background-color: rgba(8, 0, 29, 0.253);
+}
+
+.green:hover {
+  color: #98c379;
+  border-color: #98c379;
+  box-shadow: 0 0 10px #98c379;
+  text-shadow: 0 0 20px #98c379;
+}
+
+.blue:hover {
+  color: #61afef;
+  border-color: #61afef;
+  box-shadow: 0 0 10px #61afef;
+  text-shadow: 0 0 20px #61afef;
+}
+
+.pink:hover {
+  color: #c678dd;
+  border-color: #c678dd;
+  box-shadow: 0 0 10px #c678dd;
+  text-shadow: 0 0 20px #c678dd;
+}
+
+.course:hover button {
+  opacity: 1;
+}

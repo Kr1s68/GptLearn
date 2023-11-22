@@ -1,0 +1,26 @@
+.Responses {
+  margin-block: 1.8%;
+  margin-inline: 3%;
+  border-radius: 20px;
+  padding-inline: 2%;
+  padding-block: 1%;
+  height: 78%;
+  max-height: 78vh;
+  background-color: rgba(0, 0, 0, 0.404);
+  color: white;
+  overflow-y: scroll;
+}
+
+.Responses::-webkit-scrollbar {
+  width: 7px; /* width of the entire scrollbar */
+}
+
+.Responses::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.Responses::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+}
